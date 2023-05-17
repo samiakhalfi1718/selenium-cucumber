@@ -1,6 +1,6 @@
 @login
-Feature: Je souhaite tester la page de la connexion de l'application Swag labs
-  ETQ utilisateur je souhaite tester la pase de la connexion de l'application Swag Labs
+Feature: Je souhaite tester la page de la connexion de l application Swag labs
+  ETQ utilisateur je souhaite tester la page de la connexion de l application Swag Labs
 
   @connexion-CasPassant
   Scenario: Je souhaite tester la page de la connexion avec un cas passant
