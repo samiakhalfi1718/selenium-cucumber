@@ -21,7 +21,7 @@ public class LoginStepDefinition {
 	}
 	
 	@Given("Je me connecte a l application Swag Labs")
-	public void jeMeConnecteALApplicationSwagLabs() {
+	public void jeMeConnecteALApplicationSwagLabs() throws InterruptedException {
 		loginPage.login();
 	}
 	

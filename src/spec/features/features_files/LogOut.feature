@@ -4,9 +4,6 @@ Feature: Je souhaite tester la fonctionnalite de deconnexion de l application Sw
 
   Background: 
     Given Je me connecte a l application Swag Labs
-    When Je saisi le username "standard_user"
-    And Je saisi le password "secret_sauce"
-    And Je clique sur le bouton Login
 
   @deconnexionCasPassant
   Scenario: Je souhaite tester la fonctionnalite de deconnexion avec un cas passant
