@@ -5,11 +5,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import com.e2etest.automation.utils.ConfigFileReader;
 import com.e2etest.automation.utils.Setup;
 
 public class LoginPage {
+	public ConfigFileReader configFileReader;
 	
-	/* Retrieve Element*/
+	 //Retrieve Element
 	@FindBy(how=How.ID,using="user-name")
 	public static WebElement username;
 	
@@ -22,15 +24,33 @@ public class LoginPage {
 	@FindBy(how=How.XPATH,using="//span[contains(text(),'Products')]")
 	public static WebElement titlePage;
 	
+	@FindBy(how=How.XPATH,using="//div[@id='login_button_container']//form//h3")
+	public static WebElement msgError;
+	
 	//initialisation des elements
 	public LoginPage() {
+		configFileReader=new ConfigFileReader();
 		PageFactory.initElements(Setup.getDriver(), this);
 	}
 	
 	/*Methods*/
-	public void fillUsername(String userName) {
+	public void login()
+	{
+		Setup.getDriver().get(configFileReader.getProperties("home.url"));
 		username.clear();
-		username.sendKeys(userName);
+		username.sendKeys(configFileReader.getProperties("home.login"));
+		password.clear();
+		password.sendKeys(configFileReader.getProperties("home.password"));
+		btnLogin.click();
+	}
+	
+	public void connectToApp() {
+		Setup.getDriver().get(configFileReader.getProperties("home.url"));
+	}
+	
+	public void fillUsername(String usr) {
+		username.clear();
+		username.sendKeys(usr);
 	}
 	
 	public void fillPassword(String pswd) {
@@ -41,4 +61,5 @@ public class LoginPage {
 	public void clickOnLogin() {
 		btnLogin.click();
 	}
+	
 }
