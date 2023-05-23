@@ -4,11 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
 import com.e2etest.automation.utils.Setup;
 
 public class AlertDemoPage {
-	
 	@FindBy(how = How.ID, using = "alertButton")
 	public static WebElement alertButton;
 
@@ -26,6 +24,8 @@ public class AlertDemoPage {
 	
 	public void confirmAlert() {
 		Setup.getDriver().switchTo().alert().accept();
+	}
+	public void recupererTitrePage() {
 		String title=Setup.getDriver().getTitle();
 		System.out.println("title of page is :" + title);
 	}

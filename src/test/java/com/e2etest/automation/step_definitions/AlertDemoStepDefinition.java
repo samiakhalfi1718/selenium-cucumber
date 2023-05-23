@@ -27,6 +27,6 @@ public class AlertDemoStepDefinition {
 	}
 	@Then("je recupere le titre de la page")
 	public void jeRecupereLeTitreDeLaPage() {
-	    
+	    alertDemoPage.recupererTitrePage();
 	}
 }
