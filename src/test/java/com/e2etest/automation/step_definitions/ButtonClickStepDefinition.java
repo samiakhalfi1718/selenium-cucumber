@@ -43,8 +43,8 @@ public class ButtonClickStepDefinition {
 	@Then("Le message de confirmation rightclick {string}")
 	public void leMessageDeConfirmationRightclick(String string) {
 		String msg2 = buttonClickPage.msgRightClick.getText();
-		Assert.assertEquals("You have done a right click", msg2);
-		System.out.println("You have done a right click");
+		Assert.assertEquals("Right Click Me", msg2);
+		System.out.println("botton is right clicked");
 	}
 
 }

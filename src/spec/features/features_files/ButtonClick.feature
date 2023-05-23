@@ -2,7 +2,7 @@
 Feature: Je souhaite tester les bouttons
   Je souhaite tester les bouttons 
   
-  background
+  Background: 
   Given Je me connecte a l application demoqa menu boutton
 
   @doubleclick

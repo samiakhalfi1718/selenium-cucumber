@@ -1,6 +1,5 @@
 package com.e2etest.automation.page_objects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -39,8 +38,7 @@ public class ButtonClickPage {
 	public void doubleClick()
 	{
 		Actions action=new Actions(Setup.getDriver());
-		WebElement btnDoubleClick = Setup.getDriver().findElement(By.id("doubleClickBtn"));
-		action.doubleClick(btnDoubleClick).perform();
+		action.doubleClick(buttomDoubleClick).perform();
 	}
 	
 	public void rightclick()
