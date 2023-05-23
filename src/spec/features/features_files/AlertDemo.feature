@@ -1,5 +1,5 @@
 @alertdemo
-Feature: Je souhaite tester le bouton AlertDemo et confirmer l alerte et recuperer le titre de la page
+Feature: Je souhaite tester le bouton AlertDemo et confirmer l alerte et recuperer le titre de la page 
   ETQ Je souhaite tester le bouton AlertDemo et confirmer l alerte et recuperer le titre de la page
 
   @alertdemo-caspassant
