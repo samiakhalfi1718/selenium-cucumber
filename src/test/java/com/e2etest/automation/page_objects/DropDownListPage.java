@@ -16,12 +16,13 @@ public class DropDownListPage {
 	
 	@FindBy(how = How.ID, using = "oldSelectMenu")
 	public static WebElement selectMenu;
-	Select dropDownList=new Select(selectMenu);
+	public Select dropDownList;
 	
 	public DropDownListPage()
 	{
 		configFileReader=new ConfigFileReader();
 		PageFactory.initElements(Setup.getDriver(), this);
+		dropDownList=new Select(selectMenu);
 	}
 	
 	public void connectToApp() {
