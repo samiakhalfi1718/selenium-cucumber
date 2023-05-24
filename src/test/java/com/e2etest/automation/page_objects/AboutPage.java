@@ -9,9 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.e2etest.automation.utils.SeleniumUtils;
 import com.e2etest.automation.utils.Setup;
 
 public class AboutPage {
+	private SeleniumUtils seleniumUtils;
 	@FindBy(how = How.XPATH, using = "//a[@id='about_sidebar_link']")
 	public static WebElement btnAbout;
 

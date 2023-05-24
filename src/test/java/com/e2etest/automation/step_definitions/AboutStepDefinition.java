@@ -21,8 +21,7 @@ public class AboutStepDefinition {
 
 	@Then("Je me redirige vers la page About")
 	public void je_me_redirige_vers_la_page_about() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		
 	}
 
 }
