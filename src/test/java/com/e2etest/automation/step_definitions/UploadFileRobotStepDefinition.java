@@ -15,7 +15,6 @@ public class UploadFileRobotStepDefinition {
 	@Given("Je me connecte aa l application")
 	public void jeMeConnecteAaLApplication() throws InterruptedException {
 		uploadFileRobotPage.seConnecter();
-
 	}
 
 	@Given("Je teste la fonctionnalite de charger un fichier")
@@ -28,5 +27,4 @@ public class UploadFileRobotStepDefinition {
 		String text_msg = UploadFileRobotPage.upName.getText();
 		Assert.assertEquals(text_msg, string);
 	}
-
 }

@@ -35,9 +35,7 @@ public class UploadFileRobotPage {
 
 	public void uploadFile() throws InterruptedException {
 		wait.until(ExpectedConditions.elementToBeClickable(uploadFile));
-		//Setup.getDriver().get(configReader.getProperties("home.filePath"));
 		uploadFile.click();
 		upRobot.uploadFileWithRobot(configReader.getProperties("filePath.url"));
-		Thread.sleep(3000);
 	}
 }

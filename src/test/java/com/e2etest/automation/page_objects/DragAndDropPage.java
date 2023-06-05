@@ -26,7 +26,7 @@ public class DragAndDropPage {
 		PageFactory.initElements(Setup.getDriver(), this);
 	}
 	public void connectToApp() {
-		Setup.getDriver().get(configFileReader.getProperties("dropurl.url"));
+		driver.get(configFileReader.getProperties("dropurl.url"));
 	}
 	public void dragAndDrop()
 	{

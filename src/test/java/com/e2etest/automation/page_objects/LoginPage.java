@@ -34,13 +34,12 @@ public class LoginPage {
 	}
 	
 	/*Methods*/
-	public void login() throws InterruptedException
+	public void login()
 	{
 		Setup.getDriver().get(configFileReader.getProperties("home.url"));
 		username.clear();
 		username.sendKeys(configFileReader.getProperties("home.login"));
 		password.clear();
-		Thread.sleep(3000);
 		password.sendKeys(configFileReader.getProperties("home.password"));
 		btnLogin.click();
 	}
